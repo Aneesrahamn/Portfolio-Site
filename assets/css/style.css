@@ -34,9 +34,10 @@
     --black-alpha-100:rgba(0,0,0,.05);
 }
 .main {
-    background: url('/assets/images/background.jpg') no-repeat;
+    background: url('../images/background.jpg') no-repeat;
+    /* background-color: #21144c; */
     background-size: cover;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 
 
 }
@@ -128,7 +129,7 @@ header {
     color: #00c0ff;
 }
 
-/* ------- nav menu */
+/* ------ nav menu  ------*/
 .header .menu {
     flex: 0 0 50%;
 }
@@ -177,7 +178,8 @@ header {
 }
 
 /* ------ end header area */
-/***** bannner ********/
+
+/***** bannner start ********/
 .banner .row{
     display: flex;
     align-items: center;
@@ -242,7 +244,6 @@ header {
     border-radius: 30px;
     margin-right: 15px;
     border: 1px solid transparent;
-
     transition: 0.3s;
 }
 
@@ -313,7 +314,7 @@ header {
 
 .banner .banner-img {
     flex: 0 0 50%;
-    margin-top: -85px;
+    /* margin-top: -85px; */
     text-align: right;
     border-radius: 40% 40% 40% 40%;
     overflow: hidden;
@@ -332,7 +333,7 @@ header {
 
 }
 
-/* end */
+/* banner end */
 
 /* start why choose us  */
 section {
