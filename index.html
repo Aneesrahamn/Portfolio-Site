@@ -30,12 +30,16 @@
                 <div class="nav-logo">
                     <h2 class="logo-name">An<span>ees</span></h2>
                 </div>
+                <!-- Hamburger Icon -->
+                <div class="menu-toggle" id="menu-toggle">
+                    <i class="fa fa-bars navicon"></i>
+                </div>
                 <nav class="menu">
                     <ul class="navlinks">
                         <li><a href="#home" class="nav-active">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#services">Services</a></li>
-                        <li><a href="#skill">skills</a></li>
+                        <li><a href="#skill">Skills</a></li>
                         <li><a href="#portfolio">Portfolio</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
@@ -43,17 +47,13 @@
                 <div class="social-profiles">
                     <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
                     <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="https://www.linkedin.com/home?originalSubdomain=pk"><i
-                            class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://www.instagram.com/anees_auesthetic/"><i
-                        class="fa-brands fa-instagram"></i></a>
-                </div>
-                <div class="toggle-icon">
-                    <i class="fa fa-bars navicon"></i>
+                    <a href="https://www.linkedin.com/home?originalSubdomain=pk"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/anees_auesthetic/"><i class="fa-brands fa-instagram"></i></a>
                 </div>
             </div>
         </div>
     </header>
+    
     <!-- Banner -->
     <section class="banner" id="home">
         <div class="container">
@@ -614,5 +614,13 @@
     <script src="assets/js/main.js"></script>
 
 </body>
+<script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navbar = document.querySelector('.navlinks');
+
+    menuToggle.addEventListener('click', () => {
+        navbar.classList.toggle('show');
+    });
+</script>
 
 </html>
